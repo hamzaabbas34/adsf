@@ -163,7 +163,7 @@
 
 // export default Liftside;
 
-import React, { useEffect, useRef, useState, useMemo } from "react";
+import React, { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import WaveSurfer from "wavesurfer.js"; // Make sure to install wavesurfer.js
 import audioFile from "../../Assets/sounds/my.mp3"; // Import the audio file
 import sound1 from "../../Assets/Images/rightsound.png"; // Import the background image
@@ -227,30 +227,8 @@ function Liftside() {
 		};
 	}, [recordings]);
 
-	const handlePlayAll = () => {
-		let currentIndex = 0;
-
-		const playNext = (index) => {
-			if (index < wavesurferRefs.current.length) {
-				const wavesurfer = wavesurferRefs.current[index];
-
-				if (wavesurfer) {
-					wavesurfer.play();
-
-					// Once this recording finishes, play the next one
-					wavesurfer.on("finish", () => {
-						playNext(index + 1);
-					});
-				}
-			}
-		};
-
-		// Start by playing the first recording
-		playNext(currentIndex);
-	};
-
-	// Handle play/pause for each waveform
-	const handlePlayPause = (index) => {
+	// Memoize the play/pause handler
+	const handlePlayPause = useCallback((index) => {
 		const wavesurfer = wavesurferRefs.current[index];
 		if (wavesurfer) {
 			if (wavesurfer.isPlaying()) {
@@ -261,16 +239,11 @@ function Liftside() {
 				setIsPlaying(true);
 			}
 		}
-	};
+	}, []);
 
 	return (
 		<div className="flex flex-col gap-10 ">
 			{/* Button to play all recordings */}
-			<button
-				onClick={handlePlayAll}
-				className="px-6 py-2 bg-[#3BE3E3] rounded-full">
-				Play All
-			</button>
 
 			{/* Mapping through the recordings */}
 			{recordings.map((recording, index) => (
