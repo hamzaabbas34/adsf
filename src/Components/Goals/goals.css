@@ -1,0 +1,671 @@
+/* .firstsectionthree{
+display: flex;
+gap: 10px;
+padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.firstgoalsdiv{
+width: 40%;
+height: 40vh;
+background-image: url('../../Assets/Images/goalsback.png');
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 8px;
+padding: 10px 0px 10px 10px;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+
+.topdivmain{
+color: white;
+gap: 10px;
+display: flex;
+flex-direction: column;
+}
+
+.topdivmain div:nth-child(1){
+color: #A0AEC0;
+font-size: 14px;
+}
+.topdivmain div:nth-child(2){
+    font-size: 18px;
+    font-weight: 600;
+}
+.topdivmain div:nth-child(3){
+    font-size: 16px;
+}
+
+.bottomdivmain{
+display: flex;
+gap: 10px;
+color: white;
+font-size: 16px;
+/* justify-content: center; */
+/* align-items: center;
+cursor: pointer;
+} */
+
+/* .secondgoaldiv{
+width: 29%;
+height: 40vh;
+border-radius: 8px;
+background: linear-gradient(127.09deg, #202125 19.41%, rgba(65, 65, 65, 0.4) 76.65%);
+backdrop-filter: blur(120px);
+padding: 10px 0px 10px 10px;
+
+}
+
+.secondtopdiv{
+display: flex;
+flex-direction: column;
+color: white;
+}
+
+.secondtopdiv div:nth-child(1){
+font-size: 18px;
+font-weight: 700;
+}
+
+.secondtopdiv div:nth-child(2){
+    font-size: 16px;
+font-weight: 400;
+}
+
+
+
+
+.thirdgoaldiv{
+    width: 29%;
+    height: 40vh;
+border-radius: 8px;
+background: linear-gradient(126.97deg, #202125 28.26%, rgba(65, 65, 65, 0.4) 91.2%);
+backdrop-filter: blur(120px);
+padding:10px;
+}
+
+.thirdfirstdiv{
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+}
+
+.thirdfirstdiv div:nth-child(1){
+font-size: 18px;
+font-weight: 600;
+}
+
+.thirdfirstdiv div:nth-child(2){
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    background: linear-gradient(126.97deg, #202125 28.26%, rgba(65, 65, 65, 0.4) 91.2%);
+    backdrop-filter: blur(120px);
+font-size: 12px;
+font-weight: 700;
+}
+
+
+.thirdsecondivmain{
+display: flex;
+gap: 10px;
+padding-top: 10px;
+color: white;
+}
+
+.inviteddiv{
+width: 50%;
+background: linear-gradient(126.97deg, #202125 28.26%, rgba(65, 65, 65, 0.4) 91.2%);
+border: 2px solid #000000;
+backdrop-filter: blur(120px);
+box-shadow: 0px 4px 4px 0px #00000040;
+border-radius: 8px;
+padding: 10px;
+}
+.inviteddiv div:nth-child(1){
+    font-size: 12px;
+}
+
+.bonusdivmain{
+    width: 50%;
+    background: linear-gradient(126.97deg, #202125 28.26%, rgba(65, 65, 65, 0.4) 91.2%);
+    border: 2px solid #000000;
+    backdrop-filter: blur(120px);
+box-shadow: 0px 4px 4px 0px #00000040;
+border-radius: 8px;
+padding: 10px;
+}
+
+.bonusdivmain div:nth-child(1){
+    font-size: 12px;
+}
+
+
+
+
+.goalssecondsection{
+    display: flex;
+    gap: 10px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 30px;
+}
+
+.secondsectionleft{
+width: 50%;
+height: 55vh;
+background: linear-gradient(126.97deg, rgba(65, 65, 65, 0.4) 28.26%, #202125 91.2%);
+border-radius: 12px;
+padding: 10px;
+}
+
+.sectopdivmian{
+    color: white;
+}
+
+.sectopdivmian div:nth-child(1){
+font-size: 22px;
+font-weight: 700;
+}
+
+.sectopdivmian div:nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+    }
+
+
+
+
+.secondsectionright{
+    width: 50%;
+height: 55vh;
+background: linear-gradient(126.97deg, #202125 28.26%, rgba(65, 65, 65, 0.4) 91.2%);
+border-radius: 12px;
+padding: 10px;
+
+}
+
+.secondsectiontopchart{
+height: 25vh;
+}
+
+.secondsectionbottomtext{
+    height: 30vh;
+
+}
+
+.mainuserchartdivmain{
+display: flex;
+gap: 15px;
+justify-content: space-evenly;
+}
+
+.mainblockdiv{
+display: flex;
+flex-direction: column;
+gap: 5px;
+padding-top: 10px;
+}
+
+.toptowsectiondiv{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.toptowsectiondiv div:nth-child(1){
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3.5px 5.5px 0px #00000005;
+background-color: #494E54;
+border-radius: 6px;
+font-size: 22px;
+color: white;
+}
+.toptowsectiondiv div:nth-child(2){
+    color: #A0AEC0;
+    font-size: 14px;
+}
+
+.courntingdiv{
+font-size: 16px;
+font-weight: 500;
+color: white;
+}
+
+.progressdivmaindiv{
+width: 90%;
+height: 2px;
+border-radius: 3px;
+background-color: #2D2E5F;
+}
+
+.progressslider{
+background-color: #494E54;
+width: 50%;
+height: 2px;
+border-radius: 3px;
+} */
+
+/* this is the css of the third section div */
+
+/* .thirdsectiondivmain{
+display: flex;
+gap: 10px;
+padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 30px;
+}
+
+.thirdsectionleft{
+width: 50%;
+height: auto;
+padding: 10px;
+background: linear-gradient(126.97deg, rgba(65, 65, 65, 0.4) 28.26%, #202125 91.2%);
+backdrop-filter: blur(120px);
+border-radius: 12px;
+}
+
+.thirdlefttopmain{
+display: flex;
+justify-content: space-between;
+}
+.lefttopmainleft{
+display: flex;
+flex-direction: column;
+gap: 5px;
+color: white;
+}
+.lefttopmainleft div:nth-child(1){
+font-size: 25px;
+font-weight: 700;
+}
+.lefttopmainleft div:nth-child(2){
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickdiv{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01B574;
+}
+
+.lefttopright{
+font-size: 22px;
+color: white;
+cursor: pointer;
+}
+
+.goalstableone{
+width: 100%;
+margin-top: 10px;
+color: white;
+}
+
+.goalstableone tr th{
+    font-size: 14px;
+    text-align: start;
+    padding-block: 4px;
+}
+
+.goalstableone tr td{
+    font-size: 14px;
+    padding-block: 4px;
+
+}
+#icontable{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#imagesusers img{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+}
+
+.thirdsectionright{
+    width: 50%;
+    height: auto;
+padding: 10px;
+background: linear-gradient(126.97deg, rgba(65, 65, 65, 0.4) 28.26%, #202125 91.2%);
+backdrop-filter: blur(120px);
+border-radius: 12px;
+
+}
+
+.righttopmainleft{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    }
+    .righttopmainleft div:nth-child(1){
+    font-size: 25px;
+    font-weight: 700;
+    }
+    .righttopmainleft div:nth-child(2){
+        display: flex;
+        gap: 5px;
+        /* justify-content: center; */
+/* align-items: center;
+    } */
+
+/* .notificationtextmain{
+display: flex;
+gap: 10px;
+padding-top: 15px;
+
+    }
+
+
+.leftnotiiactiondiv img{
+    width: 30px;
+    height: 30px;
+}
+
+.rightnotifiactiontext{
+display: flex;
+flex-direction: column;
+color: white;
+}
+
+.rightnotifiactiontext div:nth-child(1){
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rightnotifiactiontext div:nth-child(2){
+    font-size: 14px;
+} */
+
+/* 
+
+
+@media(max-width:768px){
+
+    .firstsectionthree{
+        flex-direction: column;
+    }
+    .firstgoalsdiv ,.secondgoaldiv, .thirdgoaldiv{
+        width: 100%;
+    }
+
+    .goalssecondsection{
+        flex-direction: column;
+    }
+
+    .secondsectionleft , .secondsectionright{
+        width: 100%;
+    }
+
+    .thirdsectiondivmain{
+        flex-direction: column;
+    }
+
+    .thirdsectionleft , .thirdsectionright{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:430px){
+    
+}  */
+
+/* <div className="firstsectionthree">
+					<div className="firstgoalsdiv">
+						<div className="topdivmain">
+							<div>Welcome back,</div>
+							<div>Mark Johnson</div>
+							<div>
+								Glad to see you again! <br />
+								Ask me anything.
+							</div>
+						</div>
+
+						<div className="bottomdivmain">
+							Tap to record <Icon icon="tabler:arrow-right" />
+						</div>
+					</div>
+
+					<div className="secondgoaldiv">
+						<div className="secondtopdiv">
+							<div>Satisfaction Rate</div>
+							<div>From all projects</div>
+						</div>
+
+						<div className="secondbottomdiv"></div>
+					</div>
+
+					<div className="thirdgoaldiv">
+						<div className="thirdfirstdiv">
+							<div>Referral Tracking</div>
+							<div>
+								<Icon icon="mage:dots" />
+							</div>
+						</div>
+
+						<div className="thirdsecondivmain">
+							<div className="inviteddiv">
+								<div>Invited</div>
+								<div>145 people</div>
+							</div>
+							<div className="bonusdivmain">
+								<div>Bonus</div>
+								<div>1,465</div>
+							</div>
+						</div>
+
+						<div className="bottomchartdivmain"></div>
+					</div>
+				</div>
+
+				{/* this is the second section of goals */
+
+/* <div className="goalssecondsection">
+					<div className="secondsectionleft">
+						<div className="sectopdivmian">
+							<div>Sales overview</div>
+							<div>
+								<span style={{ color: "#07C36F" }}>(+5) more</span> in 2021
+							</div>
+						</div>
+
+						<div className="belowchartsdiv"></div>
+					</div>
+
+					<div className="secondsectionright">
+						<div className="secondsectiontopchart"></div>
+
+						<div className="secondsectionbottomtext">
+							<div className="sectopdivmian">
+								<div>Sales overview</div>
+								<div>
+									<span style={{ color: "#07C36F" }}>(+5) more</span> in 2021
+								</div>
+							</div>
+
+							<div className="mainuserchartdivmain">
+								<div className="mainblockdiv">
+									<div className="toptowsectiondiv">
+										<div>
+											<Icon icon="mdi:users-outline" />
+										</div>
+										<div>Users</div>
+									</div>
+
+									<div className="courntingdiv">32,984</div>
+
+									<div className="progressdivmaindiv">
+										<div className="progressslider"></div>
+									</div>
+								</div>
+
+								<div className="mainblockdiv">
+									<div className="toptowsectiondiv">
+										<div>
+											<Icon icon="ion:rocket" />
+										</div>
+										<div>Clicks</div>
+									</div>
+
+									<div className="courntingdiv">2,42m</div>
+
+									<div className="progressdivmaindiv">
+										<div className="progressslider"></div>
+									</div>
+								</div>
+
+								<div className="mainblockdiv">
+									<div className="toptowsectiondiv">
+										<div>
+											<Icon icon="mdi:cart" />
+										</div>
+										<div>Sales</div>
+									</div>
+
+									<div className="courntingdiv">2,400$</div>
+
+									<div className="progressdivmaindiv">
+										<div className="progressslider"></div>
+									</div>
+								</div>
+
+								<div className="mainblockdiv">
+									<div className="toptowsectiondiv">
+										<div>
+											<Icon icon="fa6-solid:screwdriver-wrench" />
+										</div>
+										<div>Items</div>
+									</div>
+
+									<div className="courntingdiv">320</div>
+
+									<div className="progressdivmaindiv">
+										<div className="progressslider"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="thirdsectiondivmain">
+					<div className="thirdsectionleft">
+						<div className="thirdlefttopmain">
+							<div className="lefttopmainleft">
+								<div>Projects Goals</div>
+								<div>
+									{" "}
+									<div className="tickdiv">
+										<Icon icon="charm:tick" />
+									</div>{" "}
+									30 done this month
+								</div>
+							</div>
+
+							<div className="lefttopright">
+								<Icon icon="mage:dots" />
+							</div>
+						</div>
+
+						<table className="goalstableone">
+							<tr>
+								<th>COMPANIES</th>
+								<th>MEMBERS</th>
+								<th>BUDGET</th>
+								<th>COMPLETION</th>
+							</tr>
+
+							<tr>
+								<td id="icontable">
+									<Icon icon="logos:adobe-xd" /> Chakra Soft UI Version
+								</td>
+								<td id="imagesusers">
+									<img src={person1} alt="" />
+								</td>
+								<td>$14,000</td>
+								<td id="progresstable">
+									60%{" "}
+									<div className="progressdivmaindiv">
+										<div
+											className="progressslider"
+											style={{ width: "60%" }}></div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td id="icontable">
+									<Icon icon="logos:adobe-xd" /> Chakra Soft UI Version
+								</td>
+								<td id="imagesusers">
+									<img src={person1} alt="" />
+								</td>
+								<td>$14,000</td>
+								<td id="progresstable">
+									60%{" "}
+									<div className="progressdivmaindiv">
+										<div
+											className="progressslider"
+											style={{ width: "60%" }}></div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div className="thirdsectionright">
+						<div className="righttopmainleft">
+							<div>Orders overview</div>
+							<div>
+								{" "}
+								<div className="tickdiv">
+									<Icon icon="charm:tick" />
+								</div>{" "}
+								+30% this month
+							</div>
+						</div>
+
+						<div className="notificationtextmain">
+							<div className="leftnotiiactiondiv">
+								<img src={service} alt="" />
+							</div>
+
+							<div className="rightnotifiactiontext">
+								<div>$2400, Design changes</div>
+								<div>22 DEC 7:20 PM</div>
+							</div>
+						</div>
+
+						<div className="notificationtextmain">
+							<div className="leftnotiiactiondiv">
+								<img src={service} alt="" />
+							</div>
+
+							<div className="rightnotifiactiontext">
+								<div>New order #4219423</div>
+								<div>22 DEC 7:20 PM</div>
+							</div>
+						</div>
+					</div>
+				</div>  */
+
+

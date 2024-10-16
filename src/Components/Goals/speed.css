@@ -1,0 +1,16 @@
+@media (min-width: 560px) and (max-width: 640px) {
+	.mywi {
+		width: 60% !important;
+	}
+	.myh{
+		width: 60% !important;
+	}
+}
+@media (min-width: 560px) and (max-width: 320px) {
+	.mywi {
+		width: 80% !important;
+	}
+	.myh{
+		width: 80% !important;
+	}
+}

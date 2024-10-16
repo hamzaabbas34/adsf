@@ -1,0 +1,13 @@
+@media (max-width: 882px) and (min-width: 320px) {
+	.myscrolldiv {
+		overflow-x: scroll;
+	}
+	.givewidht {
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.mywidht {
+		overflow-x: scroll;
+		width: 230% !important;
+	}
+}
