@@ -16,19 +16,17 @@ export default function Admin() {
 			<Nav person1={person1} pagename="Admin" />
 			<Nan2 />
 
-			{/* Search and Add Agent Section */}
-
-			<div className="grid  grid-cols-12  gap-6  font-inter text-white md:px-10 px-4 overflow-hidden">
-				<div className="xl:col-span-6 lg:col-span-12 md:col-span-12 col-span-12 overflow-hidden  ">
-					<div className="bg-[#202125] px-4 py-6 rounded-md">
+			<div className="grid px-4 grid-cols-12 gap-4 font-inter text-white md:px-10 overflow-x-auto w-full overflow-hidden">
+				<div className="xl:col-span-6 lg:col-span-12 md:col-span-12 col-span-12 overflow-hidden  w-[100%] sm:w-[100%] ">
+					<div className="bg-[#202125] px-4 py-6 rounded-md flex flex-col">
 						<div className="text-white my-4">
 							<h2 className="text-2xl">Today’s Sales</h2>
 							<p className="text-[15px] text-opacity-50  text-white">
 								Sales Summary
 							</p>
 						</div>
-						<div className="grid lg:grid-cols-4 xl:grid-cols-2 2xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1   gap-3">
-							<div className=" w-full bg-[#171821] rounded-md ">
+						<div className="grid lg:grid-cols-4 xl:grid-cols-2 2xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1   gap-3 ">
+							<div className=" w-full bg-[#171821] rounded-md flex flex-col">
 								<div className=" px-3 py-3  ">
 									<Icon
 										icon="hugeicons:analytics-01"
@@ -97,13 +95,10 @@ export default function Admin() {
 				<div className="xl:col-span-6 lg:col-span-12 md:col-span-12 col-span-12 ">
 					<Chart2 />
 				</div>
-				<div className="xl:col-span-6 lg:col-span-12 md:col-span-12 col-span-12  grid grid-cols-12  gap-6 mt-8">
-					<div className="xl:col-span-6 lg:col-span-12 md:col-span-12 col-span-12 ">
-						<AreaChart3 />
-					</div>
-					<div className="xl:col-span-6 lg:col-span-12 md:col-span-12 col-span-12 ">
-						<SemiDonutChart />
-					</div>
+				<div className="xl:col-span-6 lg:col-span-12 md:col-span-12 col-span-12  w-full  gap-6 mt-8 mx-auto  grid md:grid-cols-2 grid-cols-1">
+					<AreaChart3 />
+
+					<SemiDonutChart />
 				</div>
 			</div>
 		</div>

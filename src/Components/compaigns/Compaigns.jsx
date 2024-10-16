@@ -68,18 +68,17 @@ export default function Compaigns() {
 
 	return (
 		<div className=" w-full overflow-hidden">
-			<Nav person1={person1} pagename="Compaigns" />
+			<Nav pagename="Agents" person1={person1} />
 
-			<div className="md:px-10 px-2 py-5  gap-5 flex justify-between items-center  font-inter flex-wrap">
+			{/* Search and Add Agent Section */}
+			<div className="text-white md:px-10 px-4 py-5 gap-5  flex justify-between items-center flex-wrap">
 				<div>
-					<h2 className="font-inter sm:text-2xl text-[18px] mb-2 text-white">
-						Manage Compaigns
-					</h2>
-					<p className="sm:text-[18px] text-[14px] text-white text-opacity-50 font-thin">
-						Organize and track your campaign in one place.
+					<h2 className="font-inter text-2xl mb-3">Manage Campaign</h2>
+					<p className="  sm:text-[20px] text-[17px] text-white text-opacity-50 font-thin">
+						Manage your agents in one place.
 					</p>
 				</div>
-				<div className="flex gap-4 flex-wrap">
+				<div className="flex gap-4 flex-wrap sm:my-0 my-4  ">
 					<div className="relative">
 						<div className="absolute top-3 left-3">
 							<Icon
@@ -94,11 +93,11 @@ export default function Compaigns() {
 							placeholder="Search Campaign"
 							value={search}
 							onChange={handleSearch}
-							className="sm:px-16 ps-16 h-14 w-full outline-none border-none text-black font-inter"
+							className="md:px-16 ps-16 h-14 w-full outline-none border-none text-black font-inter"
 						/>
 					</div>
 					<button
-						className=" mywidss h-14 px-6 gap-1 bg-[#3BE3E3] text-black font-inter text-[18px] flex justify-center items-center"
+						className="h-14   px-6 gap-1 bg-[#3BE3E3] text-black font-inter text-[18px] flex justify-center items-center"
 						onClick={() => setShowModal(true)}>
 						<Icon
 							icon="f7:plus"

@@ -6,12 +6,12 @@ import './footer.css'
 
 export default function Footer() {
 	return (
-		<div className="footer w-[300px] h-[100vh] sticky top-0 left-0 bg-black text-white border-r-[0.5px] border-white border-opacity-50">
+		<div className="  footer md:w-[300px]  min-h-[100vh] left-0 bck text-white border-r-[0.5px] border-white border-opacity-50">
 			<div className="flex justify-start items-center py-8 px-2 gap-2 logdiv">
 				<img src={logoImage} alt="" className="w-[60px] h-[60px]" />
-				<h2 className="mylinks ">SNAPLEADS</h2>
+				<h2 className="  md:block hidden ">SNAPLEADS</h2>
 			</div>
-			<div className="font-inter px-4 mt-5">
+			<div className="font-inter px-4 mt-5 mypa">
 				<ul className="flex flex-col gap-5 myuls">
 					<li>
 						<NavLink
@@ -30,7 +30,7 @@ export default function Footer() {
 										style={{ color: isActive ? "black" : "white" }}
 									/>
 									<p
-										className={`text-[16px] mylinks ${
+										className={`text-[16px]   md:block hidden ${
 											isActive ? "text-black" : "text-white"
 										}`}>
 										Agents
@@ -58,7 +58,7 @@ export default function Footer() {
 									/>
 
 									<p
-										className={`text-[16px] mylinks ${
+										className={`text-[16px]   md:block hidden ${
 											isActive ? "text-black" : "text-white"
 										}`}>
 										List
@@ -84,7 +84,7 @@ export default function Footer() {
 										style={{ color: isActive ? "black" : "white" }}
 									/>
 									<p
-										className={`text-[16px] mylinks ${
+										className={`text-[16px]   md:block hidden ${
 											isActive ? "text-black" : "text-white"
 										}`}>
 										Campaigns
@@ -111,7 +111,7 @@ export default function Footer() {
 										style={{ color: isActive ? "black" : "white" }}
 									/>
 									<p
-										className={`text-[16px] mylinks ${
+										className={`text-[16px]   md:block hidden ${
 											isActive ? "text-black" : "text-white"
 										}`}>
 										Recordings
@@ -138,7 +138,7 @@ export default function Footer() {
 										style={{ color: isActive ? "black" : "white" }}
 									/>
 									<p
-										className={`text-[16px] mylinks ${
+										className={`text-[16px]   md:block hidden ${
 											isActive ? "text-black" : "text-white"
 										}`}>
 										Admin
@@ -165,7 +165,7 @@ export default function Footer() {
 										style={{ color: isActive ? "black" : "white" }}
 									/>
 									<p
-										className={`text-[16px] mylinks ${
+										className={`text-[16px]   md:block hidden ${
 											isActive ? "text-black" : "text-white"
 										}`}>
 										Goals
@@ -192,7 +192,7 @@ export default function Footer() {
 										style={{ color: isActive ? "black" : "white" }}
 									/>
 									<p
-										className={`text-[16px] mylinks ${
+										className={`text-[16px]   md:block hidden ${
 											isActive ? "text-black" : "text-white"
 										}`}>
 										Settings

@@ -53,7 +53,7 @@ export default function Agents() {
 						Manage your agents in one place.
 					</p>
 				</div>
-				<div className="flex gap-4 flex-wrap sm:my-0 my-4 ">
+				<div className="flex gap-4 flex-wrap sm:my-0 my-4  ">
 					<div className="relative">
 						<div className="absolute top-3 left-3">
 							<Icon
@@ -68,7 +68,7 @@ export default function Agents() {
 							placeholder="Search Agents"
 							value={search}
 							onChange={(e) => setSearch(e.target.value)}
-							className="md:px-16 ps-16 h-14 outline-none border-none text-black font-inter"
+							className="md:px-16 ps-16 h-14 w-full outline-none border-none text-black font-inter"
 						/>
 					</div>
 					<button

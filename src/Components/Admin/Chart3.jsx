@@ -135,15 +135,15 @@ const data2 = {
 
 export default function AreaChart3() {
 	return (
-		<div className="w-full h-full relative my-4">
+		<div className="sm:w-full  h-full relative my-4  w-full   ">
 			{/* First Chart with absolute positioning */}
-			<div className="absolute top-[-100px] left-0 w-full h-[200px]">
-				<Line options={options} data={data1} />
+			<div className="absolute top-[-30px] left-0 w-full h-[200px] ">
+				<Line options={options} data={data1} responsive />
 			</div>
 
 			{/* Second Chart */}
-			<div className="relative w-full h-[200px] mt-10">
-				<Line options={options} data={data2} />
+			<div className=" relative w-full sm:h-[250px] h-auto mt-10">
+				<Line options={options} data={data2} responsive />
 			</div>
 		</div>
 	);

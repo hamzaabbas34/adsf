@@ -48,7 +48,7 @@ function Goals() {
 					</button>
 				</div>
 			</div>
-			<div className="grid grid-cols-12  gap-5 px-4 sm:px-10 font-inter text-white ">
+			<div className="grid px-4 grid-cols-12 gap-4 font-inter text-white md:px-10 overflow-x-auto w-full  overflow-hidden ">
 				<div className="2xl:col-span-6  xl:col-span-7 col-span-12   ">
 					<div className="w-full relative h-[450px] ">
 						<div className="myindex w-full h-full  rounded-md  flex sm:p-10 p-2 flex-col justify-between z-10 relative">

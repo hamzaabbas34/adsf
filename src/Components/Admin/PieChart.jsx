@@ -39,7 +39,7 @@ export default function SemiDonutChart() {
 	};
 
 	return (
-		<div className="relative w-full h-full">
+		<div className="relative w-full h-full md:w-4/5  ">
 			<div className="absolute left-1 top-1 ">
 				<h2 className="font-inter">Earnings</h2>
 				<p className=" text-[10px] text-white text-opacity-50 ">
@@ -50,12 +50,12 @@ export default function SemiDonutChart() {
 					Profit is 48% More <br /> than last Month
 				</p>
 			</div>
-			<div className=" w-3/4 m-auto pt-16">
+			<div className="w-full mx-auto  sm:w-3/4 md:m-auto pt-16">
 				<Doughnut data={data} options={options} />
 			</div>
 
 			{/* Centered dynamic percentage text */}
-			<h2 className="absolute text-3xl left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold mt-16">
+			<h2 className="absolute text-3xl left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold mt-16 ">
 				{dynamicValue}%
 			</h2>
 		</div>

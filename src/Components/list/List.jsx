@@ -55,20 +55,18 @@ export default function List() {
 	};
 
 	return (
-		<div>
+		<div className=" ">
 			{/* Navbar Section */}
 			<Nav person1={person1} pagename="Lists" />
 			{/* Search and Add Agent Section */}
-			<div className="px-10 py-5 gap-10 flex justify-between items-center flex-wrap">
+			<div className="md:px-10 px-4 py-5 flex justify-between items-center flex-wrap text-white">
 				<div>
-					<h2 className="font-inter text-2xl mb-3 text-white">
-						Manage Contacts
-					</h2>
+					<h2 className="font-inter text-2xl mb-3">Manage Agents</h2>
 					<p className="text-[20px] text-white text-opacity-50 font-thin">
-						Manage your contacts in one place
+						Manage Contacts
 					</p>
 				</div>
-				<div className="flex gap-4 flex-wrap">
+				<div className="flex gap-4 flex-wrap sm:my-0 my-4  ">
 					<div className="relative">
 						<div className="absolute top-3 left-3">
 							<Icon
@@ -83,13 +81,12 @@ export default function List() {
 							placeholder="Search Agents"
 							value={search}
 							onChange={(e) => setSearch(e.target.value)}
-							className="px-16 h-14 outline-none border-none text-black font-inter  w-full "
+							className="md:px-16 ps-16 h-14 w-full outline-none border-none text-black font-inter"
 						/>
 					</div>
 					<button
-						className="h-14  mywids px-6 gap-1 bg-[#3BE3E3] text-black font-inter text-[18px] flex justify-center items-center"
-						onClick={() => setShowModal(true)} // Show modal when clicked
-					>
+						className="h-14 mywid  px-6 gap-1 bg-[#3BE3E3] text-black font-inter text-[18px] flex justify-center items-center"
+						onClick={() => setShowModal(true)}>
 						<Icon
 							icon="f7:plus"
 							width="1.6rem"
@@ -101,57 +98,8 @@ export default function List() {
 				</div>
 			</div>
 			<h2 className="font-inter text-2xl px-5 text-white">Applications List</h2>
-			{/* Applications List Section */}
+
 			<div className="px-5 ">
-				{/* Table Section */}
-				{/* <div className=" w-full border-[0.5px] border-white border-opacity-50 rounded-lg mt-5">
-					<table
-						className="min-w-full text-white w-[150%] overflow-x-scroll"
-						style={{ borderCollapse: "collapse" }}>
-						<thead>
-							<tr className="border-b-[0.5px] border-white border-opacity-50">
-								<th className="text-left px-4 py-6">Last Name</th>
-								<th className="text-left px-4 py-6 border-l-[0.5px] border-white border-opacity-50">
-									Total Contacts
-								</th>
-								<th className="text-left px-4 py-6 border-l-[0.5px] border-white border-opacity-50">
-									Total Subscribers
-								</th>
-								<th className="text-left px-4 py-6 border-l-[0.5px] border-white border-opacity-50">
-									Action
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							{currentAgents.map((agent, index) => (
-								<tr
-									key={index}
-									className={`border-white border-opacity-50 ${
-										index === currentAgents.length - 1 ? "" : "border-b-[0.5px]"
-									}`}>
-									<td className="px-4 py-3">{agent.name}</td>
-									<td className="px-4 py-3">
-										<div className="w-full bg-gray-200 h-2 rounded-lg">
-											<div
-												className="bg-blue-600 h-full rounded-lg"
-												style={{
-													width: `${(agent.totalContacts / 500) * 100}%`,
-												}}
-											/>
-										</div>
-										<p className="text-white mt-2 text-start">
-											{agent.totalContacts} Contacts
-										</p>
-									</td>
-									<td className="px-4 py-3">{agent.subscribers}</td>
-									<td className="px-4 py-3">
-										<button>View Profile</button>
-									</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
-				</div> */}
 				<div className="w-full border-[0.5px] border-white border-opacity-50 rounded-lg mt-5 overflow-x-auto">
 					<table
 						className="lg:w-full md:w-[150%] w-[200%] text-white table-auto"
@@ -202,14 +150,15 @@ export default function List() {
 				</div>
 
 				{/* Pagination */}
-				<div className="flex justify-between rounded-lg items-center mt-5 border-2 border-white border-opacity-50 py-3 px-3">
+				<div className=" flex justify-between gap-2 rounded-lg items-center mt-5 border-2 border-white border-opacity-50 py-3 px-3">
 					<button
 						onClick={handlePreviousPage}
 						disabled={currentPage === 1}
 						className={`flex items-center gap-4 px-4 py-2  text-white rounded ${
 							currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
 						}`}>
-						<Icon icon="icon-park-outline:arrow-left" /> Previous
+						<Icon icon="icon-park-outline:arrow-left" /> 
+						<button className="hidden sm:block">Previous</button>
 					</button>
 
 					{/* Active Page with red background */}
@@ -226,7 +175,8 @@ export default function List() {
 						className={` flex  justify-center items-center gap-4 px-4 py-2  text-white rounded ${
 							currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
 						}`}>
-						Next
+						<button className="hidden sm:block">Next</button>
+
 						<div className="mt-[1px]">
 							<Icon icon="icon-park-outline:arrow-right" />
 						</div>
