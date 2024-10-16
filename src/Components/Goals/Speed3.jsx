@@ -60,7 +60,7 @@ const BarChart2 = () => {
 					display: false, // Hide the entire legend
 				},
 				tooltip: {
-					backgroundColor: "#202125", // Tooltip background color
+					backgroundColor: "black", // Tooltip background color
 				},
 			},
 			layout: {

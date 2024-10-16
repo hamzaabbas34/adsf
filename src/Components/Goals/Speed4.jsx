@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useMemo } from "react";
 import { Line } from "react-chartjs-2";
 import {
 	Chart as ChartJS,
@@ -27,29 +27,32 @@ ChartJS.register(
 const AreaChart2 = () => {
 	const chartRef = useRef(null);
 
-	const data = {
-		labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-		datasets: [
-			{
-				label: "Sales", // Label for the area chart
-				data: [18, 12, 6, 9, 12, 3, 9],
-				backgroundColor: "rgba(59, 227, 227, 0.5)", // Temporary color for the area
-				borderColor: "inherit", // Darker blue for the line
-				borderWidth: 0,
-				fill: true, // This makes it an area chart
-				tension: 0.4, // Smoothing effect for the curve
-			},
-			{
-				label: "Returns", // Label for the returns area
-				data: [5, 2, 3, 1, 4, 1, 2],
-				backgroundColor: "rgba(43, 43, 54, 0.5)", // Temporary color for the area
-				borderColor: "#2B2B36", // Darker color for the line
-				borderWidth: 0,
-				fill: true, // This makes it an area chart
-				tension: 0, // Smoothing effect for the curve
-			},
-		],
-	};
+	const data = useMemo(
+		() => ({
+			labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+			datasets: [
+				{
+					label: "Sales",
+					data: [18, 12, 6, 9, 12, 3, 9],
+					backgroundColor: "rgba(59, 227, 227, 0.5)",
+					borderWidth: 0,
+					pointRadius: 0, // Hide point dots
+					fill: true,
+					tension: 0.4,
+				},
+				{
+					label: "Returns",
+					data: [5, 2, 3, 1, 4, 1, 2],
+					backgroundColor: "rgba(43, 43, 54, 0.5)",
+					borderWidth: 0,
+					pointRadius: 0, // Hide point dots
+					fill: true,
+					tension: 0.4,
+				},
+			],
+		}),
+		[] // Memoized with an empty dependency array
+	);
 
 	// Configuration for the area chart
 	const options = {
@@ -72,14 +75,14 @@ const AreaChart2 = () => {
 		},
 		plugins: {
 			legend: {
-				display: false,
+				display: false, // Optionally set to true to show legend
 				position: "top",
 				labels: {
-					color: "#fff", // Legend text color
+					color: "#fff",
 				},
 			},
 			tooltip: {
-				backgroundColor: "#202125", // Tooltip background color
+				backgroundColor: "#202125", // Add background color for tooltips
 			},
 		},
 		layout: {
@@ -90,8 +93,8 @@ const AreaChart2 = () => {
 				bottom: 20,
 			},
 		},
-		responsive: true, // Ensure the chart is responsive
-		maintainAspectRatio: false, // Prevent aspect ratio maintenance to use full height
+		responsive: true,
+		maintainAspectRatio: false,
 	};
 
 	// Function to create a linear gradient
@@ -100,8 +103,8 @@ const AreaChart2 = () => {
 		const { top, bottom } = chartArea;
 
 		const gradient = ctx.createLinearGradient(0, top, 0, bottom);
-		gradient.addColorStop(0, "rgba(126, 125, 125, 0.5)"); // Color 7E7D7D
-		gradient.addColorStop(1, "rgba(65, 65, 65, 0.5)"); // Color 414141
+		gradient.addColorStop(0, "rgba(126, 125, 125, 0.5)");
+		gradient.addColorStop(1, "rgba(65, 65, 65, 0.5)");
 
 		return gradient;
 	};
@@ -134,7 +137,6 @@ const AreaChart2 = () => {
 				<span className="text-[#07C36F]">(+5) more</span> in 2021
 			</p>
 			<div className="w-full sm:w-full h-full py-10">
-				{/* Set a specific height here */}
 				<Line ref={chartRef} data={data} options={options} />
 			</div>
 		</div>
